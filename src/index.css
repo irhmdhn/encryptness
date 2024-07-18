@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: "Poppins", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.btn{
+  @apply font-medium py-1 px-2 rounded-lg focus-within:outline-none focus-within:ring-4
+} 
+.btn-lg{
+  @apply py-2 px-3 rounded-xl
+}
+.btn-sm{
+  @apply py-1 px-2 rounded-lg text-sm
+}
+.btn-primary{
+  @apply bg-teal-400 text-gray-900 hover:bg-teal-500 focus-within:ring-teal-800 transition-colors 
+}
+.btn-light{
+  @apply bg-neutral-100 text-teal-900 hover:bg-neutral-200 focus-within:ring-teal-50/35 transition-colors 
+}
+.btn-outline-primary{
+  @apply text-teal-500 border border-teal-500 
+}
+
+.card{
+  @apply bg-gradient-to-br from-neutral-50/10 to-neutral-50/5 outline outline-1 outline-teal-100/15 p-4 sm:p-6 rounded-xl sm:rounded-3xl
+}
+.card-inside{
+  @apply bg-gradient-to-br from-neutral-50/10 to-neutral-50/5 outline outline-1 outline-teal-100/15 p-2 sm:p-3 rounded-md sm:rounded-xl
+}
+.nav-item{
+  @apply hover:text-teal-500 border-b-2 border-transparent p-2 text-sm sm:text-base
+}
+.nav-item.active{
+  @apply text-teal-400 border-teal-500
+}
+.input-form{
+  @apply bg-neutral-50/10 rounded-xl px-3 py-2 outline outline-1 outline-teal-100/15
+}
