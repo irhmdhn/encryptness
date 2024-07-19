@@ -15,12 +15,12 @@ const EncryptComponent = ({ onFileSelect, onSubmit }) => {
             }
         },
         accept: {
-            'image/jpg': [],
-            'image/jpeg': [],
-            'image/png': [],
-            'image/webp': [],
-            'image/gif': [],
-            'image/svg': []
+            'image/jpg': [".jpg"],
+            'image/jpeg': [".jpeg"],
+            'image/png': [".png"],
+            'image/webp': [".webp"],
+            'image/gif': [".gif"],
+            'image/svg': [".svg"]
           }
       });
   return (

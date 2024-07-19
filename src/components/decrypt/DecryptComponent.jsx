@@ -22,8 +22,9 @@ const DecryptComponent = ({ onFileSelect, onSubmit }) => {
             }
             console.log(fileRejections);
         },
-        multiple: false,
-        accept: '.txt',
+        accept: {
+            "text/plain": [".txt"],
+        },
     });
     const handleInput = (e) => {
         setInputedText(e.target.value)
